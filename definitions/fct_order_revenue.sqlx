@@ -1,0 +1,11 @@
+config {
+  type: "table",
+  description: "Aggregated order revenue table"
+}
+
+SELECT
+  order_id,
+  item,
+  qty * unit_price AS total_revenue,
+  CURRENT_TIMESTAMP() AS deployed_at
+FROM ${ref("stg_orders")}

@@ -1,0 +1,8 @@
+config {
+  type: "view",
+  description: "Raw staging orders view"
+}
+
+SELECT 101 AS order_id, "Laptop" AS item, 2 AS qty, 50000 AS unit_price
+UNION ALL
+SELECT 102 AS order_id, "Mouse" AS item, 5 AS qty, 800 AS unit_price

@@ -1,0 +1,5 @@
+defaultProject: sa-testing-515015
+defaultLocation: asia-south1
+defaultDataset: analytics_prod
+defaultAssertionDataset: dataform_assertions
+dataformCoreVersion: 3.0.0
